@@ -6,12 +6,13 @@ import (
 )
 
 func main(){
-	fmt.Println(palindrom(strings.ToLower("Aba")))
+	fmt.Println(is_palindrom("Aba"))
 }
 
-func palindrom (some string) bool {
-	for i:=0; i < len(some)/2; i++ {
-		if (some[i] != some[len(some) -1 - i] ) {
+func is_palindrom (some string) bool {
+	l :=strings.ToLower(some)
+	for i:=0; i < len(l)/2; i++ {
+		if (l[i] != l[len(l) -1 - i] ) {
 			return false
 		}
 	}	
