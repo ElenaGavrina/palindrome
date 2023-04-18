@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 func main(){
-	fmt.Println(palindrom("Aba"))
+	fmt.Println(palindrom(strings.ToLower("Aba")))
 }
 
 func palindrom (some string) bool {
